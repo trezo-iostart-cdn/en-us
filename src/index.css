@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply text-gray-700 leading-relaxed;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-bold mb-4 text-astra-green;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold mb-3 text-astra-green;
+  }
+  
+  .prose p {
+    @apply mb-4;
+  }
+  
+  .prose ul {
+    @apply mb-4 list-disc list-inside;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
